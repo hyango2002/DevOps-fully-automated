@@ -169,10 +169,10 @@
     
 6)  #### Configure system:    
 
-        1)  - Click on Manage Jenkins --> Global Tool Configuration
+        1)  - Click on Manage Jenkins --> System 
             - Go to section SonarQube servers --> **Add SonarQube **
             - Name: **SonarQube**
-            - Server URL: http://REPLACE-WITH-SONARQUBE-SERVER-PRIVATE-IP:9000          (replace SonarQube privat IP here)
+            - Server URL: http://REPLACE-WITH-SONARQUBE-SERVER-PRIVATE-IP:9000          (replace SonarQube private IP here)
             - Click on Save    
 
         2)  - Click on Manage Jenkins --> Configure System
