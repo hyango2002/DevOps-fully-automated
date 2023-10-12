@@ -67,7 +67,7 @@ pipeline {
                   -Dsonar.login=4ec2a1d32db3f0c392f270668bc180337ebd631a"""
           }
         } 
-        <!--replace line 64 to 67 with the generated scanner for maven from SonarQube-->
+        /*replace line 64 to 67 with the generated scanner for maven from SonarQube*/
 
         stage('Upload to Artifactory to Nexus') {
           steps {
