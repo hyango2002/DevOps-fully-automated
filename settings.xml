@@ -89,7 +89,7 @@ under the License.
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <sonar.host.url>http://172.31.3.9:9000</sonar.host.url> #private ip of SonarQube server
+        <sonar.host.url>http://172.31.3.9:9000</sonar.host.url> <!--private ip of SonarQube server-->
       </properties>
     </profile>
     <!--End SonarQube/Sonar Profile-->
