@@ -13,7 +13,7 @@
 
 2) ###### Jenkins/Maven/Ansible
     - Create an **Amazon Linux 2 VM** instance and call it "Jenkins"
-    - Instance type: t2.Medium
+    - Instance type: t3.2xlarge
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - **Attach Jenkins server with IAM role having "AdministratorAccess"**
@@ -23,7 +23,7 @@
 
 3) ###### SonarQube
     - Create an Create an **Ubuntu 20.04** VM instance and call it "SonarQube"
-    - Instance type: t2.medium
+    - Instance type: t3.xlarge
     - Security Group (Open): 9000, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - User data (Copy the following user data): https://github.com/hyango2002/devops-fully-automated-scripts/blob/main/sonarqube-setup.sh
@@ -31,7 +31,7 @@
 
 4) ###### Nexus
     - Create an **Amazon Linux 2** VM instance and call it "Nexus"
-    - Instance type: t2.medium
+    - Instance type: t3.2xlarge
     - Security Group (Open): 8081, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - User data (Copy the following user data): https://github.com/hyango2002/devops-fully-automated-scripts/blob/main/nexus-setup.sh
@@ -39,7 +39,7 @@
 
 5) ###### EC2 (Dev/Stage/Prod)
     - Create 6 **Amazon Linux 2** VM instances
-    - Instance type: t2.micro
+    - Instance type: m5.4xlarge
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - User data (Copy the following user data): https://github.com/hyango2002/devops-fully-automated-scripts/blob/main/deployment-servers-setup.sh
@@ -48,7 +48,7 @@
 
 6) ###### Prometheus
     - Create Amazon Linux 2 VM instance and call it "Prometheus"
-    - Instance type: t2.micro
+    - Instance type: t3.large
     - Security Group (Open): 9090 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - **Attach Prometheus server with IAM role having "AmazonEC2ReadOnlyAccess"**
@@ -60,7 +60,7 @@
 
 7) ###### Grafana
     - Create an **Ubuntu 20.04** VM instance and call it "Grafana"
-    - Instance type: t2.micro
+    - Instance type: t3.xlarge
     - Security Group (Open): 3000 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - User data (Copy the following user data): https://github.com/hyango2002/devops-fully-automated-scripts/blob/main/grafana-setup.sh
